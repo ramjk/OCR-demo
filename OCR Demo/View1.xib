@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View1" customModule="OCR_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBM-qE-ocb">
+                    <rect key="frame" x="245" y="88" width="110" height="33"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swipe Left To Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt9-xb-dxZ">
+                    <rect key="frame" x="148" y="289" width="305" height="23"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.52843753675194827" blue="0.7455309486420898" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kBM-qE-ocb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8nJ-7r-hoc"/>
+                <constraint firstItem="kBM-qE-ocb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="9VB-Z7-NJV"/>
+                <constraint firstItem="Lt9-xb-dxZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K2s-gx-snj"/>
+                <constraint firstItem="kBM-qE-ocb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O3R-gF-dWy"/>
+                <constraint firstAttribute="bottom" secondItem="kBM-qE-ocb" secondAttribute="bottom" constant="479" id="cBn-Hc-E27"/>
+                <constraint firstItem="Lt9-xb-dxZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yUq-u0-T9a"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

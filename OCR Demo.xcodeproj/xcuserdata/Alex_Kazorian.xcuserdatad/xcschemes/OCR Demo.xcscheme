@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BFE9A2C1CF58FD5005B23D5"
-               BuildableName = "OCR DemoTests.xctest"
-               BlueprintName = "OCR DemoTests"
-               ReferencedContainer = "container:OCR Demo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BFE9A371CF58FD5005B23D5"
-               BuildableName = "OCR DemoUITests.xctest"
-               BlueprintName = "OCR DemoUITests"
-               ReferencedContainer = "container:OCR Demo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -90,8 +70,7 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BFE9A181CF58FD5005B23D5"
@@ -99,7 +78,7 @@
             BlueprintName = "OCR Demo"
             ReferencedContainer = "container:OCR Demo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
