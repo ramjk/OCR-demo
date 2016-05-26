@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0B2EDFF41CF6351A0037623A /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EDFF21CF6351A0037623A /* View1.swift */; };
 		0B2EDFF51CF6351A0037623A /* View1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EDFF31CF6351A0037623A /* View1.xib */; };
+		0BBDC9D21CF6E07300424E1B /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDC9D11CF6E07300424E1B /* TesseractOCR.framework */; };
+		0BBDC9D41CF6E08D00424E1B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDC9D31CF6E08D00424E1B /* tessdata */; };
+		0BBDC9D61CF6E0B500424E1B /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDC9D51CF6E0B500424E1B /* libstdc++.6.0.9.tbd */; };
+		0BBDC9D81CF6E0C700424E1B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBDC9D71CF6E0C700424E1B /* CoreImage.framework */; };
 		0BDDDB401CF5979900ABFBB6 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDDB3E1CF5979900ABFBB6 /* cameraViewController.swift */; };
 		0BDDDB411CF5979900ABFBB6 /* cameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDDDB3F1CF5979900ABFBB6 /* cameraViewController.xib */; };
 		0BFE9A1D1CF58FD5005B23D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE9A1C1CF58FD5005B23D5 /* AppDelegate.swift */; };
@@ -18,9 +22,6 @@
 		0BFE9A271CF58FD5005B23D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE9A251CF58FD5005B23D5 /* LaunchScreen.storyboard */; };
 		0BFE9A321CF58FD5005B23D5 /* OCR_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE9A311CF58FD5005B23D5 /* OCR_DemoTests.swift */; };
 		0BFE9A3D1CF58FD5005B23D5 /* OCR_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE9A3C1CF58FD5005B23D5 /* OCR_DemoUITests.swift */; };
-		488E7334806DE03C49B0B0F5 /* Pods_OCR_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F42DA8FAA68230CF044AB /* Pods_OCR_DemoTests.framework */; };
-		A52A761D15598E874F50BCDD /* Pods_OCR_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B943FC5F6FEE408F4C17C28E /* Pods_OCR_DemoUITests.framework */; };
-		E62734BD8E9C7F1816F7E618 /* Pods_OCR_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB09F4BF6038048CE95D0B11 /* Pods_OCR_Demo.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,11 @@
 		05C24A01941B9AA748EC7CD6 /* Pods-OCR DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCR DemoUITests/Pods-OCR DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0B2EDFF21CF6351A0037623A /* View1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
 		0B2EDFF31CF6351A0037623A /* View1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View1.xib; sourceTree = "<group>"; };
+		0BBDC9C41CF6DC9400424E1B /* OCR Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCR Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0BBDC9D11CF6E07300424E1B /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		0BBDC9D31CF6E08D00424E1B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		0BBDC9D51CF6E0B500424E1B /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		0BBDC9D71CF6E0C700424E1B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		0BDDDB3E1CF5979900ABFBB6 /* cameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		0BDDDB3F1CF5979900ABFBB6 /* cameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cameraViewController.xib; sourceTree = "<group>"; };
 		0BFE9A191CF58FD5005B23D5 /* OCR Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,13 +66,10 @@
 		0BFE9A3C1CF58FD5005B23D5 /* OCR_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_DemoUITests.swift; sourceTree = "<group>"; };
 		0BFE9A3E1CF58FD5005B23D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D75CFEEEC64D1AA7CE95DB3 /* Pods-OCR DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR DemoUITests/Pods-OCR DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		458F42DA8FAA68230CF044AB /* Pods_OCR_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8093F63BE49783900550F5 /* Pods-OCR Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCR Demo/Pods-OCR Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		5686C14B338CD0C8E4729C5E /* Pods-OCR DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR DemoTests/Pods-OCR DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8EEE2C94104FD329DC3A733F /* Pods-OCR Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR Demo/Pods-OCR Demo.release.xcconfig"; sourceTree = "<group>"; };
-		B943FC5F6FEE408F4C17C28E /* Pods_OCR_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC29589D06699E647B4DEAC7 /* Pods-OCR DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCR DemoTests/Pods-OCR DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB09F4BF6038048CE95D0B11 /* Pods_OCR_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E62734BD8E9C7F1816F7E618 /* Pods_OCR_Demo.framework in Frameworks */,
+				0BBDC9D81CF6E0C700424E1B /* CoreImage.framework in Frameworks */,
+				0BBDC9D61CF6E0B500424E1B /* libstdc++.6.0.9.tbd in Frameworks */,
+				0BBDC9D21CF6E07300424E1B /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				488E7334806DE03C49B0B0F5 /* Pods_OCR_DemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52A761D15598E874F50BCDD /* Pods_OCR_DemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +103,13 @@
 		0BFE9A101CF58FD5005B23D5 = {
 			isa = PBXGroup;
 			children = (
+				0BBDC9D71CF6E0C700424E1B /* CoreImage.framework */,
+				0BBDC9D51CF6E0B500424E1B /* libstdc++.6.0.9.tbd */,
 				0BFE9A1B1CF58FD5005B23D5 /* OCR Demo */,
 				0BFE9A301CF58FD5005B23D5 /* OCR DemoTests */,
 				0BFE9A3B1CF58FD5005B23D5 /* OCR DemoUITests */,
 				0BFE9A1A1CF58FD5005B23D5 /* Products */,
 				7B72B83F43FBB35BC9F0B806 /* Pods */,
-				D56C365C1153D3C7C0C3C7EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +136,9 @@
 				0BFE9A231CF58FD5005B23D5 /* Assets.xcassets */,
 				0BFE9A251CF58FD5005B23D5 /* LaunchScreen.storyboard */,
 				0BFE9A281CF58FD5005B23D5 /* Info.plist */,
+				0BBDC9C41CF6DC9400424E1B /* OCR Demo-Bridging-Header.h */,
+				0BBDC9D31CF6E08D00424E1B /* tessdata */,
+				0BBDC9D11CF6E07300424E1B /* TesseractOCR.framework */,
 			);
 			path = "OCR Demo";
 			sourceTree = "<group>";
@@ -165,16 +172,6 @@
 				0D75CFEEEC64D1AA7CE95DB3 /* Pods-OCR DemoUITests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		D56C365C1153D3C7C0C3C7EB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DB09F4BF6038048CE95D0B11 /* Pods_OCR_Demo.framework */,
-				458F42DA8FAA68230CF044AB /* Pods_OCR_DemoTests.framework */,
-				B943FC5F6FEE408F4C17C28E /* Pods_OCR_DemoUITests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +292,7 @@
 				0BDDDB411CF5979900ABFBB6 /* cameraViewController.xib in Resources */,
 				0BFE9A241CF58FD5005B23D5 /* Assets.xcassets in Resources */,
 				0BFE9A221CF58FD5005B23D5 /* Main.storyboard in Resources */,
+				0BBDC9D41CF6E08D00424E1B /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,15 +588,26 @@
 			baseConfigurationReference = 4F8093F63BE49783900550F5 /* Pods-OCR Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TesseractOCRiOS/Products",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OCR",
+					Demo,
+				);
 				INFOPLIST_FILE = "OCR Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "AlexK.OCR-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCR Demo/OCR Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -607,15 +616,25 @@
 			baseConfigurationReference = 8EEE2C94104FD329DC3A733F /* Pods-OCR Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TesseractOCRiOS/Products",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OCR",
+					Demo,
+				);
 				INFOPLIST_FILE = "OCR Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "AlexK.OCR-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCR Demo/OCR Demo-Bridging-Header.h";
 			};
 			name = Release;
 		};

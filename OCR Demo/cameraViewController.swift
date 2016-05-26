@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class cameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-   
+    
     var captureSession : AVCaptureSession?
     var stillImageOutput : AVCaptureStillImageOutput?
     var previewLayer : AVCaptureVideoPreviewLayer?
@@ -18,8 +18,7 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
     
     override func didReceiveMemoryWarning() {
