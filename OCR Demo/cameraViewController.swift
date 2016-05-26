@@ -10,22 +10,18 @@ import UIKit
 import AVFoundation
 
 class cameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-    @IBOutlet var cameraView: UIView!
+   
     var captureSession : AVCaptureSession?
     var stillImageOutput : AVCaptureStillImageOutput?
     var previewLayer : AVCaptureVideoPreviewLayer?
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+    @IBOutlet var cameraView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,14 +31,14 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidAppear(animated)
         previewLayer?.frame = cameraView.bounds
     }
-
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         captureSession = AVCaptureSession()
         captureSession?.sessionPreset = AVCaptureSessionPreset1920x1080
         
-        let backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        var backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         var error : NSError?
         
         do {
@@ -54,7 +50,7 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 stillImageOutput = AVCaptureStillImageOutput()
                 stillImageOutput?.outputSettings = [AVVideoCodecKey : AVVideoCodecJPEG]
                 
-                if ((captureSession?.canAddOutput(stillImageOutput)) != nil) {
+                if (captureSession?.canAddOutput(stillImageOutput) != nil) {
                     captureSession?.addOutput(stillImageOutput)
                     
                     previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
@@ -64,20 +60,61 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                     captureSession?.startRunning()
                 }
             }
+            
+        } catch { }
+    }
     
-        } catch {
+    @IBOutlet var tempImageView: UIImageView!
+    
+    func didPressTakePhoto(){
+        
+        if let videoConnection = stillImageOutput?.connectionWithMediaType(AVMediaTypeVideo){
+            videoConnection.videoOrientation = AVCaptureVideoOrientation.Portrait
+            stillImageOutput?.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler: {
+                (sampleBuffer, error) in
+                
+                if sampleBuffer != nil {
+                    
+                    
+                    var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
+                    var dataProvider  = CGDataProviderCreateWithCFData(imageData)
+                    var cgImageRef = CGImageCreateWithJPEGDataProvider(dataProvider, nil, true, .RenderingIntentDefault)
+                    
+                    var image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
+                    
+                    self.tempImageView.image = image
+                    self.tempImageView.hidden = false
+                    
+                }
+                
+                
+            })
+        }
+        
+        
+    }
+    
+    
+    var didTakePhoto = Bool()
+    
+    func didPressTakeAnother(){
+        if didTakePhoto == true{
+            tempImageView.hidden = true
+            didTakePhoto = false
             
         }
+        else{
+            captureSession?.startRunning()
+            didTakePhoto = true
+            didPressTakePhoto()
+            
+        }
+        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        didPressTakeAnother()
     }
-    */
-
+    
+    
 }

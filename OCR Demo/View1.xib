@@ -37,6 +37,11 @@
                 <constraint firstAttribute="bottom" secondItem="kBM-qE-ocb" secondAttribute="bottom" constant="479" id="cBn-Hc-E27"/>
                 <constraint firstItem="Lt9-xb-dxZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yUq-u0-T9a"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8nJ-7r-hoc"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

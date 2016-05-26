@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="cameraViewController" customModule="OCR_Demo" customModuleProvider="target">
             <connections>
                 <outlet property="cameraView" destination="c3i-iL-4oG" id="sWX-3j-Q07"/>
+                <outlet property="tempImageView" destination="lCp-wg-hsz" id="Rty-AS-BOu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,15 +20,24 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3i-iL-4oG">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lCp-wg-hsz" userLabel="Temp Image View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="c3i-iL-4oG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qk4-i0-SM7"/>
-                <constraint firstAttribute="trailing" secondItem="c3i-iL-4oG" secondAttribute="trailing" id="bUY-Wl-d4Y"/>
-                <constraint firstItem="c3i-iL-4oG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hFT-Vf-q4Z"/>
-                <constraint firstItem="c3i-iL-4oG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mSp-sA-Ncp"/>
-                <constraint firstAttribute="bottom" secondItem="c3i-iL-4oG" secondAttribute="bottom" id="wr0-Nl-WPm"/>
-                <constraint firstItem="c3i-iL-4oG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yV5-hT-nYE"/>
+                <constraint firstItem="lCp-wg-hsz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0Cs-f4-jx7"/>
+                <constraint firstAttribute="trailing" secondItem="c3i-iL-4oG" secondAttribute="trailing" id="14U-4r-75z"/>
+                <constraint firstAttribute="bottom" secondItem="c3i-iL-4oG" secondAttribute="bottom" id="5Fu-jn-Xea"/>
+                <constraint firstAttribute="trailing" secondItem="lCp-wg-hsz" secondAttribute="trailing" id="M2A-ZI-At5"/>
+                <constraint firstItem="c3i-iL-4oG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Osb-4f-9mo"/>
+                <constraint firstItem="c3i-iL-4oG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VDO-eM-IYp"/>
+                <constraint firstItem="lCp-wg-hsz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Vm4-3s-ILp"/>
+                <constraint firstAttribute="bottom" secondItem="lCp-wg-hsz" secondAttribute="bottom" id="bWL-0j-zkl"/>
+                <constraint firstItem="lCp-wg-hsz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uHk-bj-GXA"/>
+                <constraint firstItem="c3i-iL-4oG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="w2u-qV-o02"/>
+                <constraint firstItem="c3i-iL-4oG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xWO-xh-5wO"/>
+                <constraint firstItem="lCp-wg-hsz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xs2-3A-cmK"/>
             </constraints>
             <point key="canvasLocation" x="229" y="95"/>
         </view>

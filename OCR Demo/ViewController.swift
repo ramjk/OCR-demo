@@ -16,12 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     
         var V1 : View1 = View1(nibName: "View1", bundle: nil)
-            
+        var Camera : cameraViewController = cameraViewController(nibName: "cameraViewController", bundle: nil)
+        
         self.addChildViewController(V1)
         self.scrollView.addSubview(V1.view)
         V1.didMoveToParentViewController(self)
-            
-        var Camera : cameraViewController = cameraViewController(nibName: "cameraViewController", bundle: nil)
         
         self.addChildViewController(Camera)
         self.scrollView.addSubview(Camera.view)
