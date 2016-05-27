@@ -37,7 +37,7 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         captureSession = AVCaptureSession()
         captureSession?.sessionPreset = AVCaptureSessionPreset1920x1080
         
-        var backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         var error : NSError?
         
         do {
@@ -75,11 +75,11 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 if sampleBuffer != nil {
                     
                     
-                    var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
-                    var dataProvider  = CGDataProviderCreateWithCFData(imageData)
-                    var cgImageRef = CGImageCreateWithJPEGDataProvider(dataProvider, nil, true, .RenderingIntentDefault)
+                    let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
+                    let dataProvider  = CGDataProviderCreateWithCFData(imageData)
+                    let cgImageRef = CGImageCreateWithJPEGDataProvider(dataProvider, nil, true, .RenderingIntentDefault)
                     
-                    var image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
+                    let image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
                     
                     self.tempImageView.image = image
                     self.tempImageView.hidden = false
@@ -97,12 +97,14 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     var didTakePhoto = Bool()
     
     func didPressTakeAnother(){
+        
         if didTakePhoto == true{
             tempImageView.hidden = true
             didTakePhoto = false
             
         }
-        else{
+            
+        else {
             captureSession?.startRunning()
             didTakePhoto = true
             didPressTakePhoto()
@@ -111,9 +113,8 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    @IBAction func cameraButton(sender: AnyObject) {
         didPressTakeAnother()
     }
-    
     
 }

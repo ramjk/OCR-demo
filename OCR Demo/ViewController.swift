@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        var V1 : View1 = View1(nibName: "View1", bundle: nil)
-        var Camera : cameraViewController = cameraViewController(nibName: "cameraViewController", bundle: nil)
+        let V1 : View1 = View1(nibName: "View1", bundle: nil)
+        let Camera : cameraViewController = cameraViewController(nibName: "cameraViewController", bundle: nil)
         
         self.addChildViewController(V1)
         self.scrollView.addSubview(V1.view)

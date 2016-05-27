@@ -23,22 +23,51 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lCp-wg-hsz" userLabel="Temp Image View">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEe-sk-l6A">
+                    <rect key="frame" x="268.5" y="510" width="63" height="48"/>
+                    <color key="backgroundColor" red="0.4807492185861636" green="0.4807492185861636" blue="0.4807492185861636" alpha="0.7561422413793103" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="uoD-eU-8Tb"/>
+                    </constraints>
+                    <state key="normal" title="Some wo">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cameraButton:" destination="-1" eventType="touchUpInside" id="YB8-oD-Bul"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="lCp-wg-hsz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0Cs-f4-jx7"/>
                 <constraint firstAttribute="trailing" secondItem="c3i-iL-4oG" secondAttribute="trailing" id="14U-4r-75z"/>
                 <constraint firstAttribute="bottom" secondItem="c3i-iL-4oG" secondAttribute="bottom" id="5Fu-jn-Xea"/>
+                <constraint firstAttribute="trailing" secondItem="JEe-sk-l6A" secondAttribute="trailing" constant="300" id="CnQ-JB-x1e"/>
                 <constraint firstAttribute="trailing" secondItem="lCp-wg-hsz" secondAttribute="trailing" id="M2A-ZI-At5"/>
                 <constraint firstItem="c3i-iL-4oG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Osb-4f-9mo"/>
                 <constraint firstItem="c3i-iL-4oG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VDO-eM-IYp"/>
                 <constraint firstItem="lCp-wg-hsz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Vm4-3s-ILp"/>
+                <constraint firstAttribute="bottom" secondItem="JEe-sk-l6A" secondAttribute="bottom" constant="42" id="XhI-hV-sU7"/>
+                <constraint firstItem="JEe-sk-l6A" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZMY-jh-YMK"/>
                 <constraint firstAttribute="bottom" secondItem="lCp-wg-hsz" secondAttribute="bottom" id="bWL-0j-zkl"/>
+                <constraint firstItem="JEe-sk-l6A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="252" id="tZA-8b-hS4"/>
                 <constraint firstItem="lCp-wg-hsz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uHk-bj-GXA"/>
                 <constraint firstItem="c3i-iL-4oG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="w2u-qV-o02"/>
                 <constraint firstItem="c3i-iL-4oG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xWO-xh-5wO"/>
                 <constraint firstItem="lCp-wg-hsz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xs2-3A-cmK"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="CnQ-JB-x1e"/>
+                    <exclude reference="tZA-8b-hS4"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="229" y="95"/>
         </view>
     </objects>
